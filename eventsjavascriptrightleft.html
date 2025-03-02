@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Word Right and Left</title>
+    <style>
+        #word {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="word">Hello World</div>
+    <button onclick="moveWord()">Move Word Right</button>
+
+    <script>
+        function moveWord() {
+            var word = document.getElementById("word");
+            if (word.style.left === "100px") {
+                word.style.left = "0px"; // Move back to the left
+            } else {
+                word.style.left = "100px"; // Move to the right
+            }
+        }
+    </script>
+
+</body>
+</html>

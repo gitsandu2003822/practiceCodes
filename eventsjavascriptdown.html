@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Word Down</title>
+    <style>
+        #word {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="word">Hello World</div>
+    <button onclick="moveWord()">Move Word Down</button>
+
+    <script>
+        function moveWord() {
+            document.getElementById("word").style.top = "100px";
+        }
+    </script>
+
+</body>
+</html>
