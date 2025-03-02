@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Move Word Down</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         #word {
             position: relative;
@@ -13,12 +14,12 @@
 <body>
 
     <div id="word">Hello World</div>
-    <button onclick="moveWord()">Move Word Down</button>  
+    <button id="moveButton">Move Word Down</button>
 
     <script>
-        function moveWord() {
-            document.getElementById("word").style.top = "100px";
-        }
+        $("#moveButton").click(function() {
+            $("#word").css("top", "100px");
+        });
     </script>
 
 </body>
